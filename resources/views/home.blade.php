@@ -5,7 +5,7 @@
 </head>
 <body>
 	<div class="container">
-		Hello
+		{{id}}
 	</div>
 </body>
 </html>

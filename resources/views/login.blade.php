@@ -60,25 +60,25 @@
             <h2 class="title">Sign in with</h2> 
             <div class="card signin-div">
                 <a href="{{route('twitterLogin')}}">
-                    <img src="{{asset('storage/img/twitter.png')}}">
+                    <img src="{{asset('img/twitter.png')}}">
                     <span>Twiiter</span>
                 </a>
             </div>
             <div class="card signin-div">
                 <a href="#">
-                    <img src="{{asset('storage/img/facebook.png')}}">
+                    <img src="{{asset('img/facebook.png')}}">
                     <span>Facebook</span>
                 </a>
             </div>
             <div class="card signin-div">
                 <a href="#">
-                    <img src="{{asset('storage/img/google.png')}}">
+                    <img src="{{asset('img/google.png')}}">
                     <span>Google</span>
                 </a>
             </div>
             <div class="card signin-div">
                 <a href="#">
-                    <img src="{{asset('storage/img/instagram.jpg')}}">
+                    <img src="{{asset('img/instagram.jpg')}}">
                     <span>Instagram</span>
                 </a>
             </div>

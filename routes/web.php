@@ -18,3 +18,6 @@ Route::get('/', function () {
 
 Route::get('login/twitter', 'Auth\LoginController@redirectToProvider')->name('twitterLogin');
 Route::get('login/twitter/callback', 'Auth\LoginController@handleProviderCallback')->name('twitterCallback');
+Route::any('home',function(){
+	return view('home');
+})->name('home');

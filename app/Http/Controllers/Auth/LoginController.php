@@ -20,8 +20,19 @@ class LoginController extends Controller
     public function handleProviderCallback()
     {
         $user = Socialite::driver('twitter')->user();
-        print_r($user);
-        exit();
-        // return view('home');
+        $data = [
+                'id' => $user->id, 
+                'name' => $user->name, 
+                'email' => $user->email, 
+                'image' => $user->avatar,
+                'provider' => 'Twitter'
+            ];
+
+        echo "---- User information ----".'</br></br>';
+        echo "Provider = ".$data['provider'].'</br>';
+        echo "User id = ".$data['id'].'</br>';
+        echo "Name = ".$data['name'].'</br>';
+        echo "Email = ".$data['email'].'</br>';
+        echo "Image = ".$data['image'].'</br>';
     }
 }
