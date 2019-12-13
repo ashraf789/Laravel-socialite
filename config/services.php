@@ -31,9 +31,24 @@ return [
     ],
 
     'twitter' => [
-     'client_id' => 'zD2wVFbZAXpknRAd9PhzvVXEu',
-     'client_secret' => 'WWsOmOGpSutoISvMQ6biKxnI7tHCby1afWqtoubVli0nfjNCYa',
-     'redirect' => 'https://fooder.test/Laravel-Socialite/public/login/twitter/callback',
+     'client_id' => env('TWITTER_CLIENT_ID'),
+     'client_secret' => env('TWITTER_CLIENT_SECRET'),
+     'redirect' => env('TWITTER_REDIRECT'),
+    ],    
+    'google' => [
+     'client_id' => env('GOOGLE_CLIENT_ID'),
+     'client_secret' => env('GOOGLE_CLIENT_SECRET'),
+     'redirect' => env('GOOGLE_CLIENT_REDIRECT'),
+    ],    
+    'facebook' => [
+     'client_id' => env('FACEBOOK_CLIENT_ID'),
+     'client_secret' => env('FACEBOOK_CLIENT_SECRET'),
+     'redirect' => env('FACEBOOK_CLIENT_REDIRECT'),
+    ],    
+    'instagram' => [
+     'client_id' => env('INSTAGRAM_CLIENT_ID'),
+     'client_secret' => env('INSTAGRAM_CLIENT_SECRET'),
+     'redirect' => env('INSTAGRAM_CLIENT_REDIRECT'),
     ],
 
 ];

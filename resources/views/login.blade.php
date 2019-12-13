@@ -56,28 +56,28 @@
 </head>
 <body>
     <div class="flex-center full-height">
-        <div class="card" style="padding:60px; z-index: 1000">
+        <div class="card" style="padding:60px;">
             <h2 class="title">Sign in with</h2> 
             <div class="card signin-div">
-                <a href="{{route('twitterLogin')}}">
-                    <img src="{{asset('img/twitter.png')}}">
-                    <span>Twiiter</span>
-                </a>
-            </div>
-            <div class="card signin-div">
-                <a href="#">
+                <a href="{{route('redirectTo','facebook')}}">
                     <img src="{{asset('img/facebook.png')}}">
                     <span>Facebook</span>
                 </a>
             </div>
             <div class="card signin-div">
-                <a href="#">
+                <a href="{{route('redirectTo','twitter')}}">
+                    <img src="{{asset('img/twitter.png')}}">
+                    <span>Twiiter</span>
+                </a>
+            </div>
+            <div class="card signin-div">
+                <a href="{{route('redirectTo','google')}}">
                     <img src="{{asset('img/google.png')}}">
                     <span>Google</span>
                 </a>
             </div>
             <div class="card signin-div">
-                <a href="#">
+                <a href="{{route('redirectTo','instagram')}}">
                     <img src="{{asset('img/instagram.jpg')}}">
                     <span>Instagram</span>
                 </a>

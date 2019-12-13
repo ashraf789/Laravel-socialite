@@ -15,9 +15,18 @@ Route::get('/', function () {
     return view('login');
 });
 
+Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider')->name('redirectTo');
 
-Route::get('login/twitter', 'Auth\LoginController@redirectToProvider')->name('twitterLogin');
-Route::get('login/twitter/callback', 'Auth\LoginController@handleProviderCallback')->name('twitterCallback');
-Route::any('home',function(){
-	return view('home');
-})->name('home');
+Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCallback')->name('callback');
+
+
+// Route::get('login/twitter', 'Auth\LoginController@twitterRedirectToProvider')->name('twitterLogin');
+// Route::get('login/twitter/callback', 'Auth\LoginController@twitterHandleProviderCallback')->name('twitterCallback');
+
+// Route::any('home',function(){
+// 	return view('home');
+// })->name('home');
+
+// // Google 
+// Route::get('login/google', 'Auth\LoginController@googleRedirectToProvider')->name('googleLogin');
+// Route::get('login/google/callback', 'Auth\LoginController@googleHandleProviderCallback')->name('googleCallback');
